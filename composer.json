@@ -10,8 +10,9 @@
         }
     ],
     "require": {
-        "mindweb/resolve": "dev-master",
-        "pimple/pimple": "~1.0"
+        "mindweb/subscriber": "dev-master",
+        "mindweb/recognizer": "dev-master",
+        "mindweb/resolve": "dev-master"
     },
     "autoload": {
         "psr-0": {
