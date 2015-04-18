@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "mindweb/resolve": "1.0.*",
+        "mindweb/resolve": "dev-master",
         "pimple/pimple": "~1.0"
     },
     "autoload": {
