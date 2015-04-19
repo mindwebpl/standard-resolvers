@@ -4,20 +4,57 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "36c9e195a69049b2fc36b6dc9522899a",
+    "hash": "afbfee8d4f3ec322725f824480cd6e05",
     "packages": [
+        {
+            "name": "mindweb/persist",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mindwebpl/persist.git",
+                "reference": "65b39892efa14bfc30debd52a0e8422601e7696d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mindwebpl/persist/zipball/65b39892efa14bfc30debd52a0e8422601e7696d",
+                "reference": "65b39892efa14bfc30debd52a0e8422601e7696d",
+                "shasum": ""
+            },
+            "require": {
+                "mindweb/recognizer": "dev-master",
+                "mindweb/subscriber": "dev-master",
+                "symfony/event-dispatcher": "~2.3,<2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mindweb\\Persist\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Czołnowski",
+                    "email": "marcin@czolnowski.net"
+                }
+            ],
+            "time": "2015-04-19 12:35:00"
+        },
         {
             "name": "mindweb/recognizer",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mindwebpl/recognizer.git",
-                "reference": "20c8f030785db8ec6641465915659c9a00e30e76"
+                "reference": "4442734109d813beeb959c02cd9238e4b639f36d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mindwebpl/recognizer/zipball/20c8f030785db8ec6641465915659c9a00e30e76",
-                "reference": "20c8f030785db8ec6641465915659c9a00e30e76",
+                "url": "https://api.github.com/repos/mindwebpl/recognizer/zipball/4442734109d813beeb959c02cd9238e4b639f36d",
+                "reference": "4442734109d813beeb959c02cd9238e4b639f36d",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +78,7 @@
                     "email": "marcin@czolnowski.net"
                 }
             ],
-            "time": "2015-04-04 15:13:35"
+            "time": "2015-04-18 18:08:54"
         },
         {
             "name": "mindweb/resolve",
@@ -49,15 +86,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mindwebpl/resolve.git",
-                "reference": "0488268bfb9790ecb8037bba6c274e66f876dea5"
+                "reference": "2ca2b04b2f0b5ad24b579ea33ac6b1b4c1f88b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mindwebpl/resolve/zipball/0488268bfb9790ecb8037bba6c274e66f876dea5",
-                "reference": "0488268bfb9790ecb8037bba6c274e66f876dea5",
+                "url": "https://api.github.com/repos/mindwebpl/resolve/zipball/2ca2b04b2f0b5ad24b579ea33ac6b1b4c1f88b21",
+                "reference": "2ca2b04b2f0b5ad24b579ea33ac6b1b4c1f88b21",
                 "shasum": ""
             },
             "require": {
+                "mindweb/persist": "dev-master",
                 "mindweb/recognizer": "dev-master",
                 "mindweb/subscriber": "dev-master",
                 "symfony/event-dispatcher": "~2.3,<2.7",
@@ -79,7 +117,7 @@
                     "email": "marcin@czolnowski.net"
                 }
             ],
-            "time": "2015-04-18 18:30:19"
+            "time": "2015-04-19 12:35:33"
         },
         {
             "name": "mindweb/subscriber",
@@ -337,6 +375,7 @@
     "stability-flags": {
         "mindweb/subscriber": 20,
         "mindweb/recognizer": 20,
+        "mindweb/persist": 20,
         "mindweb/resolve": 20
     },
     "prefer-stable": false,
